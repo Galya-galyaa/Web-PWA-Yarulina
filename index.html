@@ -2,9 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Калькулятор ИМТ</title>
     <link rel="stylesheet" href="CSS/style.css">
+
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#6338ff">
+    <link rel="icon" href="images/icons/icon-128128.png">
+    <link rel="apple-touch-icon" href="images/icons/icon-256192.png">
+    <meta name="apple-mobile-web-app-status-bar" content="#6338ff">
+
 </head>
 <body>
     <div class="container">
@@ -13,19 +22,19 @@
             Калькулятор ИМТ
         </div>
         <div class="input-div">
-            <label for="">Ваш рост в сантиметрах</label>
-            <input type="number">
-        </div class="input-div">
-        <div class="input-div">
-            <label for="">Ваш вес в килограммах</label>
-            <input type="number">
+            <label for="height">Ваш рост в сантиметрах</label>
+            <input type="number" id="height">
         </div>
         <div class="input-div">
-            <label for="">Ваш ИМТ</label>
-            <input type="number" readonly>
+            <label for="weight">Ваш вес в килограммах</label>
+            <input type="number" id="weight">
         </div>
         <div class="input-div">
-            <button>Посчитать ИМТ</button>
+            <label for="output">Ваш ИМТ</label>
+            <input type="number" readonly id="output">
+        </div>
+        <div class="input-div">
+            <button id="btn">Посчитать ИМТ</button>
         </div>
     </div>
     <script src="app.js"></script>
